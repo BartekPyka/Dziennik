@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Metrzyczka</title>
+  </head>
+  <body>
+    <div id="container">
+      <form action="">
+        <fieldset>
+          <h1>DZIENNIK PRAKTYKI ZAWODOWEJ</h1>
+          <div class="przyciski">
+            <button id="metryczka">
+              <a href="index.html">METRYCZKA</a>
+            </button>
+            <button id="dziennik">
+              <a href="dziennik.html">DZIENNIK</a>
+            </button>
+          </div>
+          <fieldset>
+            <legend>Dane Ucznia i Praktyk</legend>
+            <div class="dane_praktyk">
+              <label for="imie"
+                >Imie i Nazwisko:
+                <input type="text" id="imie" />
+              </label>
+              <label for="klasa"
+                >Klasa:
+                <input type="text" id="klasa" />
+              </label>
+              <label for="miejsceP"
+                >Miejsce Praktyki:
+                <input type="text" id="miejsceP" />
+              </label>
+              <label for="rok"
+                >Rok Szkolny:
+                <input type="text" id="rok" />
+              </label>
+              <label for="rozp"
+                >Data Rozpoczęcia:
+                <input type="date" id="rozp" />
+              </label>
+              <label for="zak"
+                >Data Zakończenia:
+                <input type="date" id="zak" />
+              </label>
+            </div>
+          </fieldset>
+          <div class="przyciski">
+            <button>PRZESLIJ</button>
+          </div>
+        </fieldset>
+        <br>
+        <div id="displayIndex"></div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+body{
+background-color: #4b1212;
+color: rgb(252, 168, 135);
+font-family: verdana;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+#container{
+display: flex;
+}
+
+
+.dane_praktyk{
+display:flex;
+flex-direction: column;
+
+}
+
+
+
+button {
+  background-color: rgb(252, 168, 135);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+button:hover,
+button:focus {
+  background-color: #07c;
+}
+
+button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+button:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    background-color: transparent;
+  }
+
+  #sprawozdanie{
+height: 75px;
+width: 500px;
+
+
+  }
+
+  

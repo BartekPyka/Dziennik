@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="dziennik.js" defer></script>
+    <title>Dziennik</title>
+  </head>
+  <body>
+    <div id="container">
+      <form action="">
+        <fieldset>
+          
+          <h1>Dziennik praktyki zawodowej</h1>
+          <div class="przyciski">
+            <button id="metryczka">
+              <a href="index.html">METRYCZKA</a>
+            </button>
+            <button id="dziennik">
+              <a href="dziennik.html">DZIENNIK</a>
+            </button>
+          </div>
+
+          <fieldset id="prakinf">
+            <legend>Informacje o Praktyce</legend>
+            <div class="dane_praktyk">
+              <label for="data"
+                >Data zajęć:
+                <input type="date" id="data" />
+              </label>
+
+              Temat zajęć:
+              <select name="dzial" id="dzial">
+                <optgroup label="Moduł wstępny">
+                  <option
+                    value="Czynności wstępne i szkolenia, struktura i organizacja pracy
+                informatyków"
+                  >
+                    Czynności wstępne i szkolenia, struktura i organizacja pracy
+                    informatyków
+                  </option>
+                  <option
+                    value="Struktura organizacyjna przedsiębiorstwa i elementy przetwarzania informacji"
+                  >
+                    Struktura organizacyjna przedsiębiorstwa i elementy
+                    przetwarzania informacji
+                  </option>
+                  <option
+                    value="Konfiguracja sprzętu komputerowego i oprogramowania"
+                  >
+                    Konfiguracja sprzętu komputerowego i oprogramowania
+                  </option>
+                </optgroup>
+                <optgroup
+                  label="Montaż, naprawa, konserwacja i obsługa sprzętu komputerowego"
+                >
+                  Montaż, naprawa, konserwacja i obsługa sprzętu komputerowego
+                  <option value="Montaż sprzętu komputerowego">
+                    Montaż sprzętu komputerowego
+                  </option>
+                  <option value="Naprawa  sprzętu komputerowego">
+                    Naprawa sprzętu komputerowego
+                  </option>
+                  <option value="Konserwacja i obsługa sprzętu komputerowego">
+                    Konserwacja i obsługa sprzętu komputerowego
+                  </option>
+                </optgroup>
+                <optgroup label="Systemy informatyczne">
+                  Systemy informatyczne
+                  <option
+                    value="Zasady administrowania systemami informatycznymi i archiwizowania danych"
+                  >
+                    Zasady administrowania systemami informatycznymi i
+                    archiwizowania danych
+                  </option>
+                  <option
+                    value="Dokumentacja technologiczna przetwarzania informacj"
+                  >
+                    Dokumentacja technologiczna przetwarzania informacj
+                  </option>
+                  <option value="Biblioteki oprogramowania i zbiorów danych">
+                    Biblioteki oprogramowania i zbiorów danych
+                  </option>
+                  <option
+                    value="Zapoznanie z programami do administracji lokalnymi sieciami komputerowymi"
+                  >
+                    Zapoznanie z programami do administracji lokalnymi sieciami
+                    komputerowymi
+                  </option>
+                  <option
+                    value="Obsługa programów używanych w przedsiębiorstwie"
+                  >
+                    Obsługa programów używanych w przedsiębiorstwie
+                  </option>
+                  <option
+                    value="komputerowe wspomaganie procesów projektowania"
+                  >
+                    komputerowe wspomaganie procesów projektowania
+                  </option>
+                  <option
+                    value="Organizacja, zbieranie i kontrola danych, przetwarzanie i wykorzystywanie wyników"
+                  >
+                    Organizacja, zbieranie i kontrola danych, przetwarzanie i
+                    wykorzystywanie wyników
+                  </option>
+                  <option
+                    value="Elementy procesów projektowania, programowania i uruchamiania programów komputerowych"
+                  >
+                    Elementy procesów projektowania, programowania i
+                    uruchamiania programów komputerowych
+                  </option>
+                  <option value="Ochrona danych i procesów przetwarzania">
+                    Ochrona danych i procesów przetwarzania
+                  </option>
+                </optgroup>
+                <optgroup label="Tworzenie aplikacji internetowych">
+                  Tworzenie aplikacji internetowych
+                </optgroup>
+                <option
+                  value="Konfiguracja serwerów i przeglądarek pod obsługę aplikacji internetowych"
+                >
+                  Konfiguracja serwerów i przeglądarek pod obsługę aplikacji
+                  internetowych
+                </option>
+                <option value="Struktura witryny internetowej - HTML">
+                  Struktura witryny internetowej - HTML
+                </option>
+                <option value="Stylizacja elementów witryny - CSS">
+                  Stylizacja elementów witryny - CSS
+                </option>
+                <option value="Programowanie aplikacji internetowych - JS, PHP">
+                  Programowanie aplikacji internetowych - JS, PHP
+                </option>
+                <option value="Testowanie aplikacji internetowych">
+                  Testowanie aplikacji internetowych
+                </option>
+              </select>
+              <br />
+
+              Opiekun:
+              <div id="radio">
+                <label for="Krzysztof Rąbała"
+                  >Krzysztof Rąbała:
+                  <input
+                    type="radio"
+                    name="opiekun"
+                    value="Krzysztof Rąbała"
+                    checked
+                  />
+                </label>
+                <label for="Przemysław Dzik"
+                  >Przemysław Dzik:
+                  <input type="radio" name="opiekun" value="Przemysław Dzik" />
+                </label>
+                <label for="Iwona Krzywa"
+                  >Iwona Krzywa:
+                  <input
+                    type="radio"
+                    name="opiekun"
+                    value="Iwona Krzywa"
+                  />
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset id="prakmat">
+            <div class="dane_praktyk">
+              <legend>Realizacja Materiału</legend>
+              <label id="sprawozdanieP" for="sprawozdanie"
+                >Sprawozdanie:
+                <input type="text" id="sprawozdanie" />
+              </label>
+              <div id="obok_siebie">
+                <label for="realizacja"
+                  >Realizacja:
+                  <input type="checkbox" id="realizacja" value="TAK" />
+                </label>
+                <label for="liczba_godz"
+                  >Liczba Godzin:
+                  <input type="number" id="liczba_godz" min="1" max="7" />
+                </label>
+              </div>
+              <label for="opanowanie"
+                >Opanowanie Materiału: 1
+                <input type="range" id="opanowanie" min="1" max="6" step="1" />
+                6
+              </label>
+            </div>
+          </fieldset>
+
+            <button id="przyciskZielony">Dodaj</button>
+          
+          
+        </fieldset>
+        <br>
+        <div id="displayDziennik"></div>
+      </form>
+    </div>
+  </body>
+</html>
